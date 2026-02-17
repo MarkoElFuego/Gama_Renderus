@@ -1,0 +1,47 @@
+[
+  {
+    "id": "modern-minimal",
+    "projectId": "belveder-01",
+    "name": "Modern Minimal",
+    "slug": "modern-minimal",
+    "description": "Čiste linije, neutralni tonovi, prirodni materijali. Prostor koji diše.",
+    "tags": ["Hrast", "Beton", "Antracit"],
+    "colorScheme": {
+      "primary": "#2C2824",
+      "secondary": "#1C1A17",
+      "accent": "#DCC8AA",
+      "mood": "warm-neutral"
+    },
+    "sortOrder": 1
+  },
+  {
+    "id": "nordic-calm",
+    "projectId": "belveder-01",
+    "name": "Nordic Calm",
+    "slug": "nordic-calm",
+    "description": "Skandinavska toplina, svetlo drvo, mekane teksture. Dom koji grli.",
+    "tags": ["Bela breza", "Lan", "Siva"],
+    "colorScheme": {
+      "primary": "#262928",
+      "secondary": "#1A1D1C",
+      "accent": "#B4C8BE",
+      "mood": "cool-light"
+    },
+    "sortOrder": 2
+  },
+  {
+    "id": "luxe-edition",
+    "projectId": "belveder-01",
+    "name": "Luxe Edition",
+    "slug": "luxe-edition",
+    "description": "Mermer, mesing, tamno drvo. Sofisticiran prostor bez kompromisa.",
+    "tags": ["Mermer", "Mesing", "Orah"],
+    "colorScheme": {
+      "primary": "#2A2520",
+      "secondary": "#1E1A16",
+      "accent": "#C5A46C",
+      "mood": "dark-luxury"
+    },
+    "sortOrder": 3
+  }
+]

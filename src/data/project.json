@@ -1,0 +1,22 @@
+{
+  "id": "belveder-01",
+  "name": "Belveder Residence",
+  "slug": "belveder-residence",
+  "description": "Moderan stambeni kompleks u srcu Novog Beograda",
+  "developerName": "Forma Development",
+  "location": "Novi Beograd",
+  "settings": {
+    "contact": {
+      "phone": "+381 11 123 4567",
+      "email": "info@belveder-residence.rs",
+      "address": "Bulevar Mihajla Pupina 115, Novi Beograd"
+    },
+    "moveInDate": "2026-Q4"
+  },
+  "stats": {
+    "totalApartments": 48,
+    "styles": 3,
+    "areaRange": "35–92",
+    "moveInYear": "2026"
+  }
+}

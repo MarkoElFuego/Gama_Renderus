@@ -1,0 +1,123 @@
+[
+  {
+    "id": "building-a",
+    "projectId": "belveder-01",
+    "name": "Lamela A",
+    "slug": "lamela-a",
+    "floorsCount": 7,
+    "sortOrder": 1,
+    "floors": [
+      {
+        "id": "floor-6",
+        "buildingId": "building-a",
+        "floorNumber": 6,
+        "name": "6. sprat",
+        "label": "Penthouse",
+        "apartments": [
+          { "id": "a6-1", "floorId": "floor-6", "code": "PH1", "type": "penthouse", "typeLabel": "Penthouse", "areaM2": 92.0, "priceEur": 211600, "rooms": 4, "bathrooms": 2, "status": "available", "orientation": "S", "features": ["terasa", "pogled"] },
+          { "id": "a6-2", "floorId": "floor-6", "code": "PH2", "type": "penthouse", "typeLabel": "Penthouse", "areaM2": 88.5, "priceEur": 203600, "rooms": 3, "bathrooms": 2, "status": "available", "orientation": "W", "features": ["terasa", "pogled"] },
+          { "id": "a6-3", "floorId": "floor-6", "code": "PH3", "type": "3br", "typeLabel": "Trosoban", "areaM2": 85.0, "priceEur": 195500, "rooms": 3, "bathrooms": 2, "status": "sold", "orientation": "E" },
+          { "id": "a6-4", "floorId": "floor-6", "code": "PH4", "type": "3br", "typeLabel": "Trosoban", "areaM2": 82.0, "priceEur": 188600, "rooms": 3, "bathrooms": 1, "status": "sold", "orientation": "N" }
+        ]
+      },
+      {
+        "id": "floor-5",
+        "buildingId": "building-a",
+        "floorNumber": 5,
+        "name": "5. sprat",
+        "label": null,
+        "apartments": [
+          { "id": "a5-1", "floorId": "floor-5", "code": "A1", "type": "1br", "typeLabel": "Jednosoban", "areaM2": 38.5, "priceEur": 88550, "rooms": 1, "bathrooms": 1, "status": "available", "orientation": "S" },
+          { "id": "a5-2", "floorId": "floor-5", "code": "A2", "type": "2br", "typeLabel": "Dvosoban", "areaM2": 62.0, "priceEur": 142600, "rooms": 2, "bathrooms": 1, "status": "available", "orientation": "SE" },
+          { "id": "a5-3", "floorId": "floor-5", "code": "A3", "type": "1br", "typeLabel": "Jednosoban", "areaM2": 41.2, "priceEur": 94760, "rooms": 1, "bathrooms": 1, "status": "sold", "orientation": "N" },
+          { "id": "a5-4", "floorId": "floor-5", "code": "A4", "type": "3br", "typeLabel": "Trosoban", "areaM2": 85.0, "priceEur": 195500, "rooms": 3, "bathrooms": 2, "status": "available", "orientation": "SW" },
+          { "id": "a5-5", "floorId": "floor-5", "code": "A5", "type": "2br", "typeLabel": "Dvosoban", "areaM2": 58.3, "priceEur": 134090, "rooms": 2, "bathrooms": 1, "status": "reserved", "orientation": "E" },
+          { "id": "a5-6", "floorId": "floor-5", "code": "A6", "type": "1br", "typeLabel": "Jednosoban", "areaM2": 35.8, "priceEur": 82340, "rooms": 1, "bathrooms": 1, "status": "sold", "orientation": "W" },
+          { "id": "a5-7", "floorId": "floor-5", "code": "A7", "type": "2br", "typeLabel": "Dvosoban", "areaM2": 65.4, "priceEur": 150420, "rooms": 2, "bathrooms": 1, "status": "sold", "orientation": "N" },
+          { "id": "a5-8", "floorId": "floor-5", "code": "A8", "type": "3br", "typeLabel": "Trosoban", "areaM2": 92.0, "priceEur": 211600, "rooms": 3, "bathrooms": 2, "status": "sold", "orientation": "NE" }
+        ]
+      },
+      {
+        "id": "floor-4",
+        "buildingId": "building-a",
+        "floorNumber": 4,
+        "name": "4. sprat",
+        "label": null,
+        "apartments": [
+          { "id": "a4-1", "floorId": "floor-4", "code": "A1", "type": "1br", "typeLabel": "Jednosoban", "areaM2": 38.5, "priceEur": 87200, "rooms": 1, "bathrooms": 1, "status": "available", "orientation": "S" },
+          { "id": "a4-2", "floorId": "floor-4", "code": "A2", "type": "2br", "typeLabel": "Dvosoban", "areaM2": 62.0, "priceEur": 142600, "rooms": 2, "bathrooms": 1, "status": "available", "orientation": "SE", "features": ["ugaoni", "pogled"] },
+          { "id": "a4-3", "floorId": "floor-4", "code": "A3", "type": "1br", "typeLabel": "Jednosoban", "areaM2": 41.2, "priceEur": 94800, "rooms": 1, "bathrooms": 1, "status": "sold", "orientation": "N" },
+          { "id": "a4-4", "floorId": "floor-4", "code": "A4", "type": "3br", "typeLabel": "Trosoban", "areaM2": 85.0, "priceEur": 195500, "rooms": 3, "bathrooms": 2, "status": "available", "orientation": "SW" },
+          { "id": "a4-5", "floorId": "floor-4", "code": "A5", "type": "2br", "typeLabel": "Dvosoban", "areaM2": 58.3, "priceEur": 134100, "rooms": 2, "bathrooms": 1, "status": "reserved", "orientation": "E" },
+          { "id": "a4-6", "floorId": "floor-4", "code": "A6", "type": "1br", "typeLabel": "Jednosoban", "areaM2": 35.8, "priceEur": 82300, "rooms": 1, "bathrooms": 1, "status": "available", "orientation": "W" },
+          { "id": "a4-7", "floorId": "floor-4", "code": "A7", "type": "2br", "typeLabel": "Dvosoban", "areaM2": 65.4, "priceEur": 150400, "rooms": 2, "bathrooms": 1, "status": "available", "orientation": "N" },
+          { "id": "a4-8", "floorId": "floor-4", "code": "A8", "type": "3br", "typeLabel": "Trosoban", "areaM2": 92.0, "priceEur": 211600, "rooms": 3, "bathrooms": 2, "status": "sold", "orientation": "NE" }
+        ]
+      },
+      {
+        "id": "floor-3",
+        "buildingId": "building-a",
+        "floorNumber": 3,
+        "name": "3. sprat",
+        "label": null,
+        "apartments": [
+          { "id": "a3-1", "floorId": "floor-3", "code": "A1", "type": "1br", "typeLabel": "Jednosoban", "areaM2": 38.5, "priceEur": 85500, "rooms": 1, "bathrooms": 1, "status": "available", "orientation": "S" },
+          { "id": "a3-2", "floorId": "floor-3", "code": "A2", "type": "2br", "typeLabel": "Dvosoban", "areaM2": 62.0, "priceEur": 139500, "rooms": 2, "bathrooms": 1, "status": "available", "orientation": "SE" },
+          { "id": "a3-3", "floorId": "floor-3", "code": "A3", "type": "1br", "typeLabel": "Jednosoban", "areaM2": 41.2, "priceEur": 92700, "rooms": 1, "bathrooms": 1, "status": "sold", "orientation": "N" },
+          { "id": "a3-4", "floorId": "floor-3", "code": "A4", "type": "3br", "typeLabel": "Trosoban", "areaM2": 85.0, "priceEur": 191300, "rooms": 3, "bathrooms": 2, "status": "available", "orientation": "SW" },
+          { "id": "a3-5", "floorId": "floor-3", "code": "A5", "type": "2br", "typeLabel": "Dvosoban", "areaM2": 58.3, "priceEur": 131200, "rooms": 2, "bathrooms": 1, "status": "reserved", "orientation": "E" },
+          { "id": "a3-6", "floorId": "floor-3", "code": "A6", "type": "1br", "typeLabel": "Jednosoban", "areaM2": 35.8, "priceEur": 80600, "rooms": 1, "bathrooms": 1, "status": "sold", "orientation": "W" },
+          { "id": "a3-7", "floorId": "floor-3", "code": "A7", "type": "2br", "typeLabel": "Dvosoban", "areaM2": 65.4, "priceEur": 147200, "rooms": 2, "bathrooms": 1, "status": "available", "orientation": "N" },
+          { "id": "a3-8", "floorId": "floor-3", "code": "A8", "type": "3br", "typeLabel": "Trosoban", "areaM2": 92.0, "priceEur": 207000, "rooms": 3, "bathrooms": 2, "status": "sold", "orientation": "NE" }
+        ]
+      },
+      {
+        "id": "floor-2",
+        "buildingId": "building-a",
+        "floorNumber": 2,
+        "name": "2. sprat",
+        "label": null,
+        "apartments": [
+          { "id": "a2-1", "floorId": "floor-2", "code": "A1", "type": "1br", "typeLabel": "Jednosoban", "areaM2": 38.5, "priceEur": 83800, "rooms": 1, "bathrooms": 1, "status": "sold", "orientation": "S" },
+          { "id": "a2-2", "floorId": "floor-2", "code": "A2", "type": "2br", "typeLabel": "Dvosoban", "areaM2": 62.0, "priceEur": 136400, "rooms": 2, "bathrooms": 1, "status": "available", "orientation": "SE" },
+          { "id": "a2-3", "floorId": "floor-2", "code": "A3", "type": "1br", "typeLabel": "Jednosoban", "areaM2": 41.2, "priceEur": 90600, "rooms": 1, "bathrooms": 1, "status": "sold", "orientation": "N" },
+          { "id": "a2-4", "floorId": "floor-2", "code": "A4", "type": "3br", "typeLabel": "Trosoban", "areaM2": 85.0, "priceEur": 187000, "rooms": 3, "bathrooms": 2, "status": "sold", "orientation": "SW" },
+          { "id": "a2-5", "floorId": "floor-2", "code": "A5", "type": "2br", "typeLabel": "Dvosoban", "areaM2": 58.3, "priceEur": 128200, "rooms": 2, "bathrooms": 1, "status": "sold", "orientation": "E" },
+          { "id": "a2-6", "floorId": "floor-2", "code": "A6", "type": "1br", "typeLabel": "Jednosoban", "areaM2": 35.8, "priceEur": 78700, "rooms": 1, "bathrooms": 1, "status": "available", "orientation": "W" },
+          { "id": "a2-7", "floorId": "floor-2", "code": "A7", "type": "2br", "typeLabel": "Dvosoban", "areaM2": 65.4, "priceEur": 143900, "rooms": 2, "bathrooms": 1, "status": "sold", "orientation": "N" },
+          { "id": "a2-8", "floorId": "floor-2", "code": "A8", "type": "3br", "typeLabel": "Trosoban", "areaM2": 92.0, "priceEur": 202400, "rooms": 3, "bathrooms": 2, "status": "sold", "orientation": "NE" }
+        ]
+      },
+      {
+        "id": "floor-1",
+        "buildingId": "building-a",
+        "floorNumber": 1,
+        "name": "1. sprat",
+        "label": null,
+        "apartments": [
+          { "id": "a1-1", "floorId": "floor-1", "code": "A1", "type": "1br", "typeLabel": "Jednosoban", "areaM2": 38.5, "priceEur": 81000, "rooms": 1, "bathrooms": 1, "status": "sold", "orientation": "S" },
+          { "id": "a1-2", "floorId": "floor-1", "code": "A2", "type": "2br", "typeLabel": "Dvosoban", "areaM2": 62.0, "priceEur": 133200, "rooms": 2, "bathrooms": 1, "status": "sold", "orientation": "SE" },
+          { "id": "a1-3", "floorId": "floor-1", "code": "A3", "type": "1br", "typeLabel": "Jednosoban", "areaM2": 41.2, "priceEur": 88600, "rooms": 1, "bathrooms": 1, "status": "sold", "orientation": "N" },
+          { "id": "a1-4", "floorId": "floor-1", "code": "A4", "type": "3br", "typeLabel": "Trosoban", "areaM2": 85.0, "priceEur": 182800, "rooms": 3, "bathrooms": 2, "status": "sold", "orientation": "SW" },
+          { "id": "a1-5", "floorId": "floor-1", "code": "A5", "type": "2br", "typeLabel": "Dvosoban", "areaM2": 58.3, "priceEur": 125400, "rooms": 2, "bathrooms": 1, "status": "sold", "orientation": "E" },
+          { "id": "a1-6", "floorId": "floor-1", "code": "A6", "type": "1br", "typeLabel": "Jednosoban", "areaM2": 35.8, "priceEur": 77000, "rooms": 1, "bathrooms": 1, "status": "available", "orientation": "W" },
+          { "id": "a1-7", "floorId": "floor-1", "code": "A7", "type": "2br", "typeLabel": "Dvosoban", "areaM2": 65.4, "priceEur": 140700, "rooms": 2, "bathrooms": 1, "status": "sold", "orientation": "N" },
+          { "id": "a1-8", "floorId": "floor-1", "code": "A8", "type": "3br", "typeLabel": "Trosoban", "areaM2": 92.0, "priceEur": 197800, "rooms": 3, "bathrooms": 2, "status": "sold", "orientation": "NE" }
+        ]
+      },
+      {
+        "id": "floor-0",
+        "buildingId": "building-a",
+        "floorNumber": 0,
+        "name": "Prizemlje",
+        "label": "Lokali",
+        "apartments": [
+          { "id": "a0-1", "floorId": "floor-0", "code": "L1", "type": "studio", "typeLabel": "Lokal", "areaM2": 55.0, "priceEur": 132000, "rooms": 0, "bathrooms": 1, "status": "sold", "orientation": "S" },
+          { "id": "a0-2", "floorId": "floor-0", "code": "L2", "type": "studio", "typeLabel": "Lokal", "areaM2": 72.0, "priceEur": 172800, "rooms": 0, "bathrooms": 1, "status": "sold", "orientation": "S" },
+          { "id": "a0-3", "floorId": "floor-0", "code": "L3", "type": "studio", "typeLabel": "Lokal", "areaM2": 48.0, "priceEur": 115200, "rooms": 0, "bathrooms": 1, "status": "sold", "orientation": "N" },
+          { "id": "a0-4", "floorId": "floor-0", "code": "L4", "type": "studio", "typeLabel": "Lokal", "areaM2": 63.0, "priceEur": 151200, "rooms": 0, "bathrooms": 1, "status": "sold", "orientation": "N" }
+        ]
+      }
+    ]
+  }
+]

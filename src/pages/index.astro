@@ -1,0 +1,73 @@
+---
+import BuyerLayout from '../layouts/BuyerLayout.astro';
+import HeroSection from '../components/buyer/HeroSection.svelte';
+import BuildingSelector from '../components/buyer/BuildingSelector.svelte';
+import StyleSelector from '../components/buyer/StyleSelector.svelte';
+import RenderGallery from '../components/buyer/RenderGallery.svelte';
+import LeadForm from '../components/buyer/LeadForm.svelte';
+import AdminPreview from '../components/buyer/AdminPreview.svelte';
+
+// Load demo data
+import projectData from '../data/project.json';
+import buildingsData from '../data/buildings.json';
+import stylesData from '../data/styles.json';
+
+// Flatten all apartments for components that need them
+const allApartments = buildingsData.flatMap(b =>
+  b.floors.flatMap(f => f.apartments)
+);
+
+// Default building floors (first building)
+const defaultBuilding = buildingsData[0];
+const floors = defaultBuilding.floors;
+---
+
+<BuyerLayout title={`${projectData.name} — Gamma Renderus`}>
+  <!-- Hero -->
+  <HeroSection
+    client:load
+    projectName={projectData.name}
+    location={projectData.location}
+    totalApartments={projectData.stats.totalApartments}
+    stylesCount={projectData.stats.styles}
+    areaRange={projectData.stats.areaRange}
+    moveInYear={projectData.stats.moveInYear}
+  />
+
+  <!-- Apartment Selector -->
+  <BuildingSelector
+    client:load
+    floors={floors}
+  />
+
+  <div class="divider"><div class="divider-line"></div></div>
+
+  <!-- Style Selector -->
+  <StyleSelector
+    client:load
+    styles={stylesData}
+  />
+
+  <div class="divider"><div class="divider-line"></div></div>
+
+  <!-- Render Gallery -->
+  <RenderGallery
+    client:load
+    styles={stylesData}
+    allApartments={allApartments}
+  />
+
+  <div class="divider"><div class="divider-line"></div></div>
+
+  <!-- Lead Form -->
+  <LeadForm
+    client:load
+    styles={stylesData}
+    allApartments={allApartments}
+  />
+
+  <div class="divider"><div class="divider-line"></div></div>
+
+  <!-- Admin Dashboard Preview -->
+  <AdminPreview client:visible />
+</BuyerLayout>

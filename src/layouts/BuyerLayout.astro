@@ -1,0 +1,270 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  projectName?: string;
+  projectTagline?: string;
+}
+
+const {
+  title,
+  description,
+  projectName = 'Forma',
+  projectTagline = 'Apartment Configurator',
+} = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <!-- Navigation -->
+  <nav class="buyer-nav">
+    <a href="/" class="logo">
+      {projectName}
+      <span>{projectTagline}</span>
+    </a>
+    <div class="nav-right">
+      <a href="#stanovi" class="nav-link">Stanovi</a>
+      <a href="#enterijeri" class="nav-link">Enterijeri</a>
+      <a href="#kontakt" class="nav-link">Kontakt</a>
+      <a href="#kontakt" class="nav-cta">Zakažite obilazak</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Meni" id="nav-toggle">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#stanovi" class="mobile-menu-link">Stanovi</a>
+    <a href="#enterijeri" class="mobile-menu-link">Enterijeri</a>
+    <a href="#kontakt" class="mobile-menu-link">Kontakt</a>
+    <a href="#kontakt" class="mobile-menu-cta">Zakažite obilazak</a>
+  </div>
+
+  <!-- Page content -->
+  <main>
+    <slot />
+  </main>
+
+  <!-- Footer -->
+  <footer class="buyer-footer">
+    <div class="footer-brand">{projectName}</div>
+    <div class="footer-text">Belveder Residence — &copy; {new Date().getFullYear()}</div>
+    <div class="footer-powered">Powered by <span class="gold">Renderus Studio</span></div>
+  </footer>
+</BaseLayout>
+
+<style>
+  /* ======================== NAVIGATION ======================== */
+  .buyer-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-nav);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-6) var(--page-padding);
+    background: linear-gradient(to bottom, rgba(12, 11, 10, 0.95), rgba(12, 11, 10, 0));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .logo {
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 8px;
+    color: var(--gold);
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .logo span {
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: var(--text-dim);
+    display: block;
+    margin-top: 2px;
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+  }
+
+  .nav-link {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    transition: color var(--transition);
+  }
+
+  .nav-link:hover {
+    color: var(--gold);
+  }
+
+  .nav-cta {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--bg);
+    background: var(--gold);
+    padding: 10px 24px;
+    transition: background var(--transition);
+  }
+
+  .nav-cta:hover {
+    background: var(--gold-light);
+  }
+
+  /* Hamburger */
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px;
+  }
+
+  .nav-hamburger span {
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: var(--gold);
+    transition: all var(--transition);
+  }
+
+  /* Mobile menu */
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: calc(var(--z-nav) - 1);
+    background: rgba(12, 11, 10, 0.98);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-8);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition);
+  }
+
+  .mobile-menu.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .mobile-menu-link {
+    font-family: var(--serif);
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--text);
+    transition: color var(--transition);
+  }
+
+  .mobile-menu-link:hover {
+    color: var(--gold);
+  }
+
+  .mobile-menu-cta {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--bg);
+    background: var(--gold);
+    padding: 12px 32px;
+    margin-top: var(--space-6);
+  }
+
+  /* ======================== FOOTER ======================== */
+  .buyer-footer {
+    padding: var(--page-padding);
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-brand {
+    font-family: var(--serif);
+    font-size: 18px;
+    letter-spacing: 6px;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+
+  .footer-text {
+    font-size: 11px;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+  }
+
+  .footer-powered {
+    font-size: 10px;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+  }
+
+  /* ======================== RESPONSIVE ======================== */
+  @media (max-width: 768px) {
+    .nav-right {
+      display: none;
+    }
+
+    .nav-hamburger {
+      display: flex;
+    }
+
+    .mobile-menu {
+      display: flex;
+    }
+
+    .buyer-footer {
+      flex-direction: column;
+      gap: var(--space-4);
+      text-align: center;
+    }
+  }
+</style>
+
+<script>
+  // Mobile nav toggle
+  const toggle = document.getElementById('nav-toggle');
+  const menu = document.getElementById('mobile-menu');
+
+  toggle?.addEventListener('click', () => {
+    menu?.classList.toggle('open');
+  });
+
+  // Close menu on link click
+  menu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu?.classList.remove('open');
+    });
+  });
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+  reveals.forEach(el => observer.observe(el));
+</script>
