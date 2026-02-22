@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@astrojs/svelte": "^7.2.5",
+    "@photo-sphere-viewer/core": "^5.14.1",
+    "@photo-sphere-viewer/markers-plugin": "^5.14.1",
     "astro": "^5.17.1",
     "svelte": "^5.51.3",
     "typescript": "^5.9.3"

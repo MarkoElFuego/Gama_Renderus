@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="skyC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#161412"/>
+      <stop offset="100%" stop-color="#0C0B0A"/>
+    </linearGradient>
+    <linearGradient id="bldgC" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c1a17"/>
+      <stop offset="100%" stop-color="#121110"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1920" height="1080" fill="url(#skyC)"/>
+
+  <!-- Ground plane -->
+  <rect x="0" y="820" width="1920" height="260" fill="#0a0908"/>
+
+  <!-- Building - Rear facade, wider with setback -->
+  <rect x="260" y="220" width="1400" height="600" fill="url(#bldgC)" stroke="#1f1d1a" stroke-width="1"/>
+
+  <!-- Upper setback floor -->
+  <rect x="400" y="160" width="1120" height="70" fill="#181614" stroke="#1f1d1a" stroke-width="0.5"/>
+  <!-- Penthouse level -->
+  <rect x="560" y="110" width="800" height="60" fill="#161412" stroke="#1a1816" stroke-width="0.5"/>
+
+  <!-- Roof line -->
+  <rect x="540" y="104" width="840" height="8" fill="#201e1a"/>
+
+  <!-- Window grid (9 cols x 6 rows) -->
+  <g fill="#16140f" stroke="#1f1d18" stroke-width="0.5">
+    <!-- Row 1 -->
+    <rect x="320" y="260" width="120" height="65"/>
+    <rect x="470" y="260" width="120" height="65"/>
+    <rect x="620" y="260" width="120" height="65"/>
+    <rect x="770" y="260" width="120" height="65"/>
+    <rect x="920" y="260" width="120" height="65"/>
+    <rect x="1070" y="260" width="120" height="65"/>
+    <rect x="1220" y="260" width="120" height="65"/>
+    <rect x="1370" y="260" width="120" height="65"/>
+    <rect x="1520" y="260" width="120" height="65"/>
+    <!-- Row 2 -->
+    <rect x="320" y="355" width="120" height="65"/>
+    <rect x="470" y="355" width="120" height="65"/>
+    <rect x="620" y="355" width="120" height="65"/>
+    <rect x="770" y="355" width="120" height="65"/>
+    <rect x="920" y="355" width="120" height="65"/>
+    <rect x="1070" y="355" width="120" height="65"/>
+    <rect x="1220" y="355" width="120" height="65"/>
+    <rect x="1370" y="355" width="120" height="65"/>
+    <rect x="1520" y="355" width="120" height="65"/>
+    <!-- Row 3 -->
+    <rect x="320" y="450" width="120" height="65"/>
+    <rect x="470" y="450" width="120" height="65"/>
+    <rect x="620" y="450" width="120" height="65"/>
+    <rect x="770" y="450" width="120" height="65"/>
+    <rect x="920" y="450" width="120" height="65"/>
+    <rect x="1070" y="450" width="120" height="65"/>
+    <rect x="1220" y="450" width="120" height="65"/>
+    <rect x="1370" y="450" width="120" height="65"/>
+    <rect x="1520" y="450" width="120" height="65"/>
+    <!-- Row 4 -->
+    <rect x="320" y="545" width="120" height="65"/>
+    <rect x="470" y="545" width="120" height="65"/>
+    <rect x="620" y="545" width="120" height="65"/>
+    <rect x="770" y="545" width="120" height="65"/>
+    <rect x="920" y="545" width="120" height="65"/>
+    <rect x="1070" y="545" width="120" height="65"/>
+    <rect x="1220" y="545" width="120" height="65"/>
+    <rect x="1370" y="545" width="120" height="65"/>
+    <rect x="1520" y="545" width="120" height="65"/>
+    <!-- Row 5 -->
+    <rect x="320" y="640" width="120" height="65"/>
+    <rect x="470" y="640" width="120" height="65"/>
+    <rect x="620" y="640" width="120" height="65"/>
+    <rect x="770" y="640" width="120" height="65"/>
+    <rect x="920" y="640" width="120" height="65"/>
+    <rect x="1070" y="640" width="120" height="65"/>
+    <rect x="1220" y="640" width="120" height="65"/>
+    <rect x="1370" y="640" width="120" height="65"/>
+    <rect x="1520" y="640" width="120" height="65"/>
+    <!-- Row 6 -->
+    <rect x="320" y="735" width="120" height="65"/>
+    <rect x="470" y="735" width="120" height="65"/>
+    <rect x="620" y="735" width="120" height="65"/>
+    <rect x="770" y="735" width="120" height="65"/>
+    <rect x="920" y="735" width="120" height="65"/>
+    <rect x="1070" y="735" width="120" height="65"/>
+    <rect x="1220" y="735" width="120" height="65"/>
+    <rect x="1370" y="735" width="120" height="65"/>
+    <rect x="1520" y="735" width="120" height="65"/>
+  </g>
+
+  <!-- Penthouse windows -->
+  <g fill="#14120f" stroke="#1f1d18" stroke-width="0.5">
+    <rect x="600" y="125" width="160" height="35"/>
+    <rect x="800" y="125" width="160" height="35"/>
+    <rect x="1000" y="125" width="160" height="35"/>
+    <rect x="1200" y="125" width="100" height="35"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="960" y="950" text-anchor="middle" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="#C5A46C" letter-spacing="12">FASADA C</text>
+  <text x="960" y="1000" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#C5A46C" opacity="0.5" letter-spacing="6">Belveder Residence</text>
+</svg>

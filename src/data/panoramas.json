@@ -1,0 +1,79 @@
+{
+  "studio": {
+    "living": {
+      "imageUrl": "/assets/panoramas/belveder/studio-living.svg",
+      "hotpoints": [],
+      "initialView": { "pitch": 0, "yaw": 0, "hfov": 80 }
+    }
+  },
+  "1br": {
+    "living": {
+      "imageUrl": "/assets/panoramas/belveder/1br-living.svg",
+      "hotpoints": [
+        { "id": "hp-kitchen", "pitch": -5, "yaw": 120, "type": "navigate", "label": "Kuhinja", "targetRoom": "kitchen" }
+      ],
+      "initialView": { "pitch": 0, "yaw": 0, "hfov": 80 }
+    },
+    "kitchen": {
+      "imageUrl": "/assets/panoramas/belveder/1br-kitchen.svg",
+      "hotpoints": [
+        { "id": "hp-living", "pitch": 0, "yaw": -90, "type": "navigate", "label": "Dnevna soba", "targetRoom": "living" }
+      ],
+      "initialView": { "pitch": 0, "yaw": 0, "hfov": 80 }
+    }
+  },
+  "2br": {
+    "living": {
+      "imageUrl": "/assets/panoramas/belveder/2br-living.svg",
+      "hotpoints": [
+        { "id": "hp-kitchen", "pitch": -5, "yaw": 120, "type": "navigate", "label": "Kuhinja", "targetRoom": "kitchen" },
+        { "id": "hp-sofa", "pitch": -10, "yaw": -30, "type": "info", "label": "Sofa", "content": "Koza, italijanski dizajn. 240x95cm." }
+      ],
+      "initialView": { "pitch": 0, "yaw": 0, "hfov": 80 }
+    },
+    "kitchen": {
+      "imageUrl": "/assets/panoramas/belveder/2br-kitchen.svg",
+      "hotpoints": [
+        { "id": "hp-living", "pitch": 0, "yaw": -90, "type": "navigate", "label": "Dnevna soba", "targetRoom": "living" },
+        { "id": "hp-counter", "pitch": -15, "yaw": 45, "type": "info", "label": "Radna ploca", "content": "Kvarc, Caesarstone. 3cm debljina." }
+      ],
+      "initialView": { "pitch": 0, "yaw": 0, "hfov": 80 }
+    },
+    "bedroom": {
+      "imageUrl": "/assets/panoramas/belveder/2br-bedroom.svg",
+      "hotpoints": [],
+      "initialView": { "pitch": 0, "yaw": 0, "hfov": 80 }
+    },
+    "bathroom": {
+      "imageUrl": "/assets/panoramas/belveder/2br-bathroom.svg",
+      "hotpoints": [],
+      "initialView": { "pitch": 0, "yaw": 0, "hfov": 80 }
+    }
+  },
+  "3br": {
+    "living": {
+      "imageUrl": "/assets/panoramas/belveder/3br-living.svg",
+      "hotpoints": [
+        { "id": "hp-kitchen", "pitch": -5, "yaw": 110, "type": "navigate", "label": "Kuhinja", "targetRoom": "kitchen" }
+      ],
+      "initialView": { "pitch": 0, "yaw": 0, "hfov": 80 }
+    },
+    "kitchen": {
+      "imageUrl": "/assets/panoramas/belveder/2br-kitchen.svg",
+      "hotpoints": [],
+      "initialView": { "pitch": 0, "yaw": 0, "hfov": 80 }
+    }
+  },
+  "penthouse": {
+    "living": {
+      "imageUrl": "/assets/panoramas/belveder/penthouse-living.svg",
+      "hotpoints": [],
+      "initialView": { "pitch": 0, "yaw": 0, "hfov": 90 }
+    },
+    "kitchen": {
+      "imageUrl": "/assets/panoramas/belveder/2br-kitchen.svg",
+      "hotpoints": [],
+      "initialView": { "pitch": 0, "yaw": 0, "hfov": 80 }
+    }
+  }
+}

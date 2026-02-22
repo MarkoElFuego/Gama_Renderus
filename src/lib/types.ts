@@ -190,3 +190,93 @@ export interface AgentSession {
   customerEmail?: string;
   startedAt: string;
 }
+
+// ======================== SHOWROOM STATE MACHINE ========================
+
+export type ShowroomView = 'building' | 'facade_highlight' | 'floor_plan' | 'panorama';
+export type FacadeId = 'A' | 'B' | 'C' | 'D';
+export type TransitionType = 'rotate' | 'zoom_in' | 'zoom_out' | 'fade' | 'none';
+
+export interface ShowroomState {
+  currentView: ShowroomView;
+  currentFacade: FacadeId;
+  previousFacade: FacadeId | null;
+  selectedBuildingId: string | null;
+  selectedApartmentId: string | null;
+  selectedFloorId: string | null;
+  selectedRoom: RoomType | null;
+  isTransitioning: boolean;
+  transitionType: TransitionType;
+  history: ShowroomView[];
+}
+
+// ======================== AI AGENT INTENTS ========================
+
+export type AgentIntentType =
+  | 'rotate_building'
+  | 'show_apartment'
+  | 'enter_apartment'
+  | 'show_room'
+  | 'describe_element'
+  | 'go_back'
+  | 'list_available'
+  | 'general_info';
+
+export interface AgentIntent {
+  type: AgentIntentType;
+  params: Record<string, unknown>;
+  responseText: string;
+  confidence: number;
+}
+
+export interface RotateBuildingParams {
+  direction: 'next' | 'prev' | FacadeId;
+}
+
+export interface ShowApartmentParams {
+  apartmentCode: string;
+}
+
+export interface ShowRoomParams {
+  room: RoomType;
+}
+
+export interface ListAvailableParams {
+  filter?: {
+    type?: ApartmentType;
+    minArea?: number;
+    maxPrice?: number;
+    floor?: number;
+    facade?: FacadeId;
+  };
+}
+
+export interface GeneralInfoParams {
+  topic: string;
+}
+
+// ======================== FACADE MAPPING ========================
+
+export interface FacadeApartmentMapping {
+  apartmentId: string;
+  svgZoneId: string;
+  bbox: { x: number; y: number; width: number; height: number };
+}
+
+// ======================== PANORAMA ========================
+
+export interface PanoramaHotpoint {
+  id: string;
+  pitch: number;
+  yaw: number;
+  type: 'info' | 'navigate' | 'link';
+  label: string;
+  targetRoom?: RoomType;
+  content?: string;
+}
+
+export interface PanoramaConfig {
+  imageUrl: string;
+  hotpoints: PanoramaHotpoint[];
+  initialView: { pitch: number; yaw: number; hfov: number };
+}

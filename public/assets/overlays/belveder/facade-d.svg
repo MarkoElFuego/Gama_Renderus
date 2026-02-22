@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <!-- Facade D overlay — 6 floors x 2 apartments per floor (left side view) -->
+  <!-- Floor 6 (top) -->
+  <rect class="apartment-zone" data-apartment-id="D-6-1" x="630" y="208" width="490" height="90" fill="transparent" stroke="#C5A46C" stroke-opacity="0.3" stroke-width="1"/>
+  <rect class="apartment-zone" data-apartment-id="D-6-2" x="1125" y="210" width="490" height="90" fill="transparent" stroke="#C5A46C" stroke-opacity="0.3" stroke-width="1"/>
+
+  <!-- Floor 5 -->
+  <rect class="apartment-zone" data-apartment-id="D-5-1" x="630" y="308" width="490" height="90" fill="transparent" stroke="#C5A46C" stroke-opacity="0.3" stroke-width="1"/>
+  <rect class="apartment-zone" data-apartment-id="D-5-2" x="1125" y="310" width="490" height="90" fill="transparent" stroke="#C5A46C" stroke-opacity="0.3" stroke-width="1"/>
+
+  <!-- Floor 4 -->
+  <rect class="apartment-zone" data-apartment-id="D-4-1" x="630" y="408" width="490" height="90" fill="transparent" stroke="#C5A46C" stroke-opacity="0.3" stroke-width="1"/>
+  <rect class="apartment-zone" data-apartment-id="D-4-2" x="1125" y="410" width="490" height="90" fill="transparent" stroke="#C5A46C" stroke-opacity="0.3" stroke-width="1"/>
+
+  <!-- Floor 3 -->
+  <rect class="apartment-zone" data-apartment-id="D-3-1" x="630" y="508" width="490" height="90" fill="transparent" stroke="#C5A46C" stroke-opacity="0.3" stroke-width="1"/>
+  <rect class="apartment-zone" data-apartment-id="D-3-2" x="1125" y="510" width="490" height="90" fill="transparent" stroke="#C5A46C" stroke-opacity="0.3" stroke-width="1"/>
+
+  <!-- Floor 2 -->
+  <rect class="apartment-zone" data-apartment-id="D-2-1" x="630" y="608" width="490" height="90" fill="transparent" stroke="#C5A46C" stroke-opacity="0.3" stroke-width="1"/>
+  <rect class="apartment-zone" data-apartment-id="D-2-2" x="1125" y="610" width="490" height="90" fill="transparent" stroke="#C5A46C" stroke-opacity="0.3" stroke-width="1"/>
+
+  <!-- Floor 1 (ground) -->
+  <rect class="apartment-zone" data-apartment-id="D-1-1" x="630" y="708" width="490" height="90" fill="transparent" stroke="#C5A46C" stroke-opacity="0.3" stroke-width="1"/>
+  <rect class="apartment-zone" data-apartment-id="D-1-2" x="1125" y="710" width="490" height="90" fill="transparent" stroke="#C5A46C" stroke-opacity="0.3" stroke-width="1"/>
+</svg>

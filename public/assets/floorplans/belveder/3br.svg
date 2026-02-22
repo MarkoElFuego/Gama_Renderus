@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <style>
+      .wall { fill: none; stroke: #C5A46C; stroke-width: 2; }
+      .wall-thick { fill: none; stroke: #C5A46C; stroke-width: 3.5; }
+      .room-fill { fill: #141210; }
+      .label { fill: #C5A46C; font-family: Georgia, serif; font-size: 12px; text-anchor: middle; }
+      .area { fill: #C5A46C; opacity: 0.4; font-family: Georgia, serif; font-size: 10px; text-anchor: middle; }
+      .title { fill: #C5A46C; font-family: Georgia, serif; font-size: 22px; font-weight: bold; text-anchor: middle; letter-spacing: 3px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0C0B0A"/>
+
+  <!-- Title -->
+  <text class="title" x="400" y="40">TROSOBAN</text>
+  <text class="area" x="400" y="60">85.0 m²</text>
+
+  <!-- Outer walls -->
+  <rect class="wall-thick" x="40" y="75" width="720" height="465"/>
+
+  <!-- Living room -->
+  <g data-room="living">
+    <rect class="room-fill" x="42" y="77" width="350" height="210"/>
+    <rect class="wall" x="40" y="75" width="354" height="214"/>
+    <text class="label" x="217" y="185">Dnevni boravak</text>
+    <text class="area" x="217" y="200">24.0 m²</text>
+  </g>
+
+  <!-- Kitchen + Dining -->
+  <g data-room="kitchen">
+    <rect class="room-fill" x="396" y="77" width="362" height="210"/>
+    <rect class="wall" x="394" y="75" width="366" height="214"/>
+    <text class="label" x="577" y="185">Kuhinja / Trpezarija</text>
+    <text class="area" x="577" y="200">15.0 m²</text>
+  </g>
+
+  <!-- Bedroom 1 (master) -->
+  <g data-room="bedroom">
+    <rect class="room-fill" x="42" y="291" width="230" height="247"/>
+    <rect class="wall" x="40" y="289" width="234" height="251"/>
+    <text class="label" x="157" y="418">Spavaća soba 1</text>
+    <text class="area" x="157" y="433">15.5 m²</text>
+  </g>
+
+  <!-- Bedroom 2 -->
+  <g data-room="bedroom">
+    <rect class="room-fill" x="276" y="291" width="190" height="247"/>
+    <rect class="wall" x="274" y="289" width="194" height="251"/>
+    <text class="label" x="371" y="418">Spavaća soba 2</text>
+    <text class="area" x="371" y="433">12.0 m²</text>
+  </g>
+
+  <!-- Bedroom 3 -->
+  <g data-room="bedroom">
+    <rect class="room-fill" x="470" y="291" width="180" height="130"/>
+    <rect class="wall" x="468" y="289" width="184" height="134"/>
+    <text class="label" x="560" y="360">Spavaća soba 3</text>
+    <text class="area" x="560" y="375">10.0 m²</text>
+  </g>
+
+  <!-- Bathroom 1 -->
+  <g data-room="bathroom">
+    <rect class="room-fill" x="654" y="291" width="104" height="130"/>
+    <rect class="wall" x="652" y="289" width="108" height="134"/>
+    <text class="label" x="706" y="355">Kupatilo 1</text>
+    <text class="area" x="706" y="370">4.5 m²</text>
+  </g>
+
+  <!-- Bathroom 2 -->
+  <g data-room="bathroom">
+    <rect class="room-fill" x="654" y="425" width="104" height="113"/>
+    <rect class="wall" x="652" y="423" width="108" height="117"/>
+    <text class="label" x="706" y="483">Kupatilo 2</text>
+    <text class="area" x="706" y="498">3.0 m²</text>
+  </g>
+
+  <!-- Hallway -->
+  <g data-room="hallway">
+    <rect class="room-fill" x="470" y="425" width="180" height="113"/>
+    <rect class="wall" x="468" y="423" width="184" height="117"/>
+    <text class="label" x="560" y="483">Hodnik</text>
+    <text class="area" x="560" y="498">4.0 m²</text>
+  </g>
+
+  <!-- Compass -->
+  <text fill="#C5A46C" opacity="0.3" font-family="Georgia, serif" font-size="12" x="760" y="570" text-anchor="middle">N &#8593;</text>
+</svg>

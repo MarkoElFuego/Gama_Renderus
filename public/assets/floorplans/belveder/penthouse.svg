@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <style>
+      .wall { fill: none; stroke: #C5A46C; stroke-width: 2; }
+      .wall-thick { fill: none; stroke: #C5A46C; stroke-width: 3.5; }
+      .room-fill { fill: #141210; }
+      .label { fill: #C5A46C; font-family: Georgia, serif; font-size: 12px; text-anchor: middle; }
+      .area { fill: #C5A46C; opacity: 0.4; font-family: Georgia, serif; font-size: 10px; text-anchor: middle; }
+      .title { fill: #C5A46C; font-family: Georgia, serif; font-size: 22px; font-weight: bold; text-anchor: middle; letter-spacing: 3px; }
+      .terrace-fill { fill: #0e0d0b; }
+      .terrace-stroke { fill: none; stroke: #C5A46C; stroke-width: 1.5; stroke-dasharray: 6,3; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0C0B0A"/>
+
+  <!-- Title -->
+  <text class="title" x="400" y="35">PENTHOUSE</text>
+  <text class="area" x="400" y="55">128.0 m²</text>
+
+  <!-- Outer walls -->
+  <rect class="wall-thick" x="30" y="65" width="740" height="380"/>
+
+  <!-- Terrace (dashed outline, outside main footprint) -->
+  <rect class="terrace-fill" x="30" y="447" width="740" height="90"/>
+  <rect class="terrace-stroke" x="30" y="447" width="740" height="90"/>
+  <text class="label" x="400" y="498">Terasa</text>
+  <text class="area" x="400" y="513">28.0 m²</text>
+
+  <!-- Living room (large open plan) -->
+  <g data-room="living">
+    <rect class="room-fill" x="32" y="67" width="420" height="220"/>
+    <rect class="wall" x="30" y="65" width="424" height="224"/>
+    <text class="label" x="242" y="178">Dnevni boravak</text>
+    <text class="area" x="242" y="193">32.0 m²</text>
+  </g>
+
+  <!-- Kitchen / Dining -->
+  <g data-room="kitchen">
+    <rect class="room-fill" x="456" y="67" width="312" height="220"/>
+    <rect class="wall" x="454" y="65" width="316" height="224"/>
+    <text class="label" x="612" y="178">Kuhinja / Trpezarija</text>
+    <text class="area" x="612" y="193">18.0 m²</text>
+  </g>
+
+  <!-- Master bedroom -->
+  <g data-room="bedroom">
+    <rect class="room-fill" x="32" y="291" width="220" height="152"/>
+    <rect class="wall" x="30" y="289" width="224" height="156"/>
+    <text class="label" x="142" y="370">Master spavaća</text>
+    <text class="area" x="142" y="385">18.5 m²</text>
+  </g>
+
+  <!-- Bedroom 2 -->
+  <g data-room="bedroom">
+    <rect class="room-fill" x="256" y="291" width="170" height="152"/>
+    <rect class="wall" x="254" y="289" width="174" height="156"/>
+    <text class="label" x="341" y="370">Spavaća 2</text>
+    <text class="area" x="341" y="385">14.0 m²</text>
+  </g>
+
+  <!-- Bedroom 3 -->
+  <g data-room="bedroom">
+    <rect class="room-fill" x="430" y="291" width="160" height="152"/>
+    <rect class="wall" x="428" y="289" width="164" height="156"/>
+    <text class="label" x="510" y="370">Spavaća 3</text>
+    <text class="area" x="510" y="385">12.0 m²</text>
+  </g>
+
+  <!-- Bathroom 1 (en-suite) -->
+  <g data-room="bathroom">
+    <rect class="room-fill" x="594" y="291" width="84" height="72"/>
+    <rect class="wall" x="592" y="289" width="88" height="76"/>
+    <text class="label" x="636" y="330">Kup. 1</text>
+    <text class="area" x="636" y="343">5.5 m²</text>
+  </g>
+
+  <!-- Bathroom 2 -->
+  <g data-room="bathroom">
+    <rect class="room-fill" x="682" y="291" width="86" height="72"/>
+    <rect class="wall" x="680" y="289" width="90" height="76"/>
+    <text class="label" x="725" y="330">Kup. 2</text>
+    <text class="area" x="725" y="343">4.0 m²</text>
+  </g>
+
+  <!-- Hallway / Vestibule -->
+  <g data-room="hallway">
+    <rect class="room-fill" x="594" y="367" width="174" height="76"/>
+    <rect class="wall" x="592" y="365" width="178" height="80"/>
+    <text class="label" x="681" y="408">Hodnik</text>
+    <text class="area" x="681" y="421">5.0 m²</text>
+  </g>
+
+  <!-- Compass -->
+  <text fill="#C5A46C" opacity="0.3" font-family="Georgia, serif" font-size="12" x="760" y="575" text-anchor="middle">N &#8593;</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 1024" width="2048" height="1024">
+  <defs>
+    <linearGradient id="floorGradK" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1816"/>
+      <stop offset="100%" stop-color="#0e0d0b"/>
+    </linearGradient>
+    <linearGradient id="ceilGradK" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#181614"/>
+      <stop offset="100%" stop-color="#0e0d0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background / walls -->
+  <rect width="2048" height="1024" fill="#121110"/>
+
+  <!-- Ceiling zone -->
+  <rect x="0" y="0" width="2048" height="280" fill="url(#ceilGradK)"/>
+
+  <!-- Floor zone (tile pattern hint) -->
+  <rect x="0" y="720" width="2048" height="304" fill="url(#floorGradK)"/>
+  <g stroke="#1a1816" stroke-width="0.3" opacity="0.5">
+    <line x1="0" y1="780" x2="2048" y2="780"/>
+    <line x1="0" y1="840" x2="2048" y2="840"/>
+    <line x1="0" y1="900" x2="2048" y2="900"/>
+    <line x1="0" y1="960" x2="2048" y2="960"/>
+  </g>
+
+  <!-- Wall panels -->
+  <g stroke="#1e1c18" stroke-width="1" fill="none">
+    <line x1="512" y1="280" x2="512" y2="720"/>
+    <line x1="1024" y1="280" x2="1024" y2="720"/>
+    <line x1="1536" y1="280" x2="1536" y2="720"/>
+  </g>
+
+  <!-- Kitchen counter (wall 1) -->
+  <rect x="60" y="520" width="400" height="200" fill="#161412" stroke="#1e1c18" stroke-width="1"/>
+  <rect x="60" y="510" width="400" height="14" fill="#1a1816" stroke="#1e1c18" stroke-width="0.5"/>
+  <!-- Upper cabinets -->
+  <rect x="60" y="310" width="400" height="120" fill="#151310" stroke="#1e1c18" stroke-width="0.5"/>
+  <line x1="160" y1="310" x2="160" y2="430" stroke="#1e1c18" stroke-width="0.5"/>
+  <line x1="260" y1="310" x2="260" y2="430" stroke="#1e1c18" stroke-width="0.5"/>
+  <line x1="360" y1="310" x2="360" y2="430" stroke="#1e1c18" stroke-width="0.5"/>
+
+  <!-- Window (wall 2) -->
+  <rect x="620" y="340" width="280" height="280" fill="#0a0908" stroke="#1a1816" stroke-width="1.5"/>
+  <line x1="760" y1="340" x2="760" y2="620" stroke="#1a1816" stroke-width="0.5"/>
+  <line x1="620" y1="480" x2="900" y2="480" stroke="#1a1816" stroke-width="0.5"/>
+
+  <!-- Kitchen island (wall 3 area) -->
+  <rect x="1100" y="560" width="320" height="130" rx="4" fill="#161412" stroke="#1e1c18" stroke-width="1"/>
+  <rect x="1100" y="550" width="320" height="14" fill="#1a1816" stroke="#1e1c18" stroke-width="0.5"/>
+
+  <!-- Refrigerator silhouette (wall 4) -->
+  <rect x="1600" y="320" width="120" height="380" fill="#161412" stroke="#1e1c18" stroke-width="1"/>
+  <line x1="1600" y1="520" x2="1720" y2="520" stroke="#1e1c18" stroke-width="0.5"/>
+
+  <!-- Range hood -->
+  <rect x="160" y="280" width="200" height="30" fill="#181614" stroke="#1e1c18" stroke-width="0.5"/>
+
+  <!-- Ceiling lights -->
+  <circle cx="760" cy="140" r="30" fill="none" stroke="#C5A46C" stroke-opacity="0.12" stroke-width="1"/>
+  <circle cx="1260" cy="140" r="30" fill="none" stroke="#C5A46C" stroke-opacity="0.12" stroke-width="1"/>
+
+  <!-- Room label -->
+  <text x="1024" y="490" text-anchor="middle" font-family="Georgia, serif" font-size="48" fill="#C5A46C" opacity="0.6" letter-spacing="8">KUHINJA</text>
+  <text x="1024" y="530" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#C5A46C" opacity="0.3" letter-spacing="4">Dvosoban — Belveder Residence</text>
+  <text x="1024" y="560" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#C5A46C" opacity="0.2">360° Panorama Placeholder</text>
+</svg>

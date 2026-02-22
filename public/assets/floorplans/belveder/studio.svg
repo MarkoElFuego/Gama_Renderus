@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <style>
+      .wall { fill: none; stroke: #C5A46C; stroke-width: 2; }
+      .wall-thick { fill: none; stroke: #C5A46C; stroke-width: 3.5; }
+      .room-fill { fill: #141210; }
+      .label { fill: #C5A46C; font-family: Georgia, serif; font-size: 14px; text-anchor: middle; }
+      .area { fill: #C5A46C; opacity: 0.4; font-family: Georgia, serif; font-size: 11px; text-anchor: middle; }
+      .title { fill: #C5A46C; font-family: Georgia, serif; font-size: 22px; font-weight: bold; text-anchor: middle; letter-spacing: 3px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0C0B0A"/>
+
+  <!-- Title -->
+  <text class="title" x="400" y="40">STUDIO</text>
+  <text class="area" x="400" y="60">32.5 m²</text>
+
+  <!-- Outer walls -->
+  <rect class="wall-thick" x="150" y="90" width="500" height="420"/>
+
+  <!-- Living / Sleeping area -->
+  <g data-room="living">
+    <rect class="room-fill" x="152" y="92" width="330" height="280"/>
+    <rect class="wall" x="150" y="90" width="334" height="284"/>
+    <text class="label" x="317" y="240">Dnevni boravak</text>
+    <text class="area" x="317" y="258">18.2 m²</text>
+  </g>
+
+  <!-- Kitchen -->
+  <g data-room="kitchen">
+    <rect class="room-fill" x="486" y="92" width="162" height="280"/>
+    <rect class="wall" x="484" y="90" width="166" height="284"/>
+    <text class="label" x="567" y="240">Kuhinja</text>
+    <text class="area" x="567" y="258">7.8 m²</text>
+  </g>
+
+  <!-- Bathroom -->
+  <g data-room="bathroom">
+    <rect class="room-fill" x="152" y="376" width="200" height="132"/>
+    <rect class="wall" x="150" y="374" width="204" height="136"/>
+    <text class="label" x="252" y="448">Kupatilo</text>
+    <text class="area" x="252" y="466">4.5 m²</text>
+  </g>
+
+  <!-- Hallway -->
+  <g data-room="hallway">
+    <rect class="room-fill" x="356" y="376" width="292" height="132"/>
+    <rect class="wall" x="354" y="374" width="296" height="136"/>
+    <text class="label" x="502" y="448">Hodnik</text>
+    <text class="area" x="502" y="466">2.0 m²</text>
+  </g>
+
+  <!-- Compass -->
+  <text fill="#C5A46C" opacity="0.3" font-family="Georgia, serif" font-size="12" x="710" y="560" text-anchor="middle">N &#8593;</text>
+</svg>

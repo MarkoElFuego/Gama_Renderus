@@ -1,0 +1,31 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<BaseLayout title={title} description="AI Showroom — Belveder Residence">
+  <div class="showroom-shell">
+    <slot />
+  </div>
+</BaseLayout>
+
+<style is:global>
+  body {
+    overflow: hidden;
+    height: 100dvh;
+  }
+
+  .showroom-shell {
+    position: relative;
+    width: 100vw;
+    height: 100dvh;
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    background: var(--bg);
+  }
+</style>

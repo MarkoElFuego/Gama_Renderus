@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(cmd /c \"dir /a /s\")",
+      "Bash(cmd /c:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(npm create:*)",
+      "Bash(xcopy:*)",
+      "Bash(npx astro add:*)",
+      "Bash(npx astro build)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(\"F:/github/Gama_Renderus/public/assets/overlays/belveder/facade-a.svg\":*)",
+      "Bash(\"F:/github/Gama_Renderus/public/assets/overlays/belveder/facade-b.svg\":*)",
+      "Bash(\"F:/github/Gama_Renderus/public/assets/overlays/belveder/facade-c.svg\":*)",
+      "Bash(\"F:/github/Gama_Renderus/public/assets/overlays/belveder/facade-d.svg\":*)",
+      "Bash(\"F:/github/Gama_Renderus/public/assets/floorplans/belveder/studio.svg\":*)",
+      "Bash(\"F:/github/Gama_Renderus/public/assets/floorplans/belveder/1br.svg\":*)",
+      "Bash(\"F:/github/Gama_Renderus/public/assets/floorplans/belveder/2br.svg\":*)",
+      "Bash(\"F:/github/Gama_Renderus/public/assets/floorplans/belveder/3br.svg\":*)",
+      "Bash(\"F:/github/Gama_Renderus/public/assets/floorplans/belveder/penthouse.svg\":*)",
+      "Bash(\"F:/github/Gama_Renderus/public/assets/panoramas/belveder/2br-living.svg\":*)",
+      "Bash(\"F:/github/Gama_Renderus/public/assets/panoramas/belveder/2br-kitchen.svg\":*)",
+      "Bash(test:*)",
+      "Bash(/usr/bin/ls:*)",
+      "Bash(/bin/ls:*)",
+      "Bash(builtin echo:*)",
+      "Bash(printf:*)",
+      "Bash(F:/github/Gama_Renderus/public/assets/buildings/belveder/facade-a.svg:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm install:*)"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 1024" width="2048" height="1024">
+  <defs>
+    <linearGradient id="floorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1816"/>
+      <stop offset="100%" stop-color="#0e0d0b"/>
+    </linearGradient>
+    <linearGradient id="ceilGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#181614"/>
+      <stop offset="100%" stop-color="#0e0d0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background / walls -->
+  <rect width="2048" height="1024" fill="#121110"/>
+
+  <!-- Ceiling zone -->
+  <rect x="0" y="0" width="2048" height="280" fill="url(#ceilGrad)"/>
+
+  <!-- Floor zone -->
+  <rect x="0" y="720" width="2048" height="304" fill="url(#floorGrad)"/>
+
+  <!-- Wall panels (simulating equirectangular wrap) -->
+  <g stroke="#1e1c18" stroke-width="1" fill="none">
+    <!-- Vertical panel dividers -->
+    <line x1="512" y1="280" x2="512" y2="720"/>
+    <line x1="1024" y1="280" x2="1024" y2="720"/>
+    <line x1="1536" y1="280" x2="1536" y2="720"/>
+  </g>
+
+  <!-- Window on wall 1 -->
+  <rect x="140" y="340" width="230" height="300" fill="#0a0908" stroke="#1a1816" stroke-width="1.5"/>
+  <line x1="255" y1="340" x2="255" y2="640" stroke="#1a1816" stroke-width="0.5"/>
+  <line x1="140" y1="490" x2="370" y2="490" stroke="#1a1816" stroke-width="0.5"/>
+
+  <!-- Furniture silhouettes (sofa shape) -->
+  <rect x="620" y="580" width="280" height="100" rx="8" fill="#161412" stroke="#1e1c18" stroke-width="0.5"/>
+  <rect x="630" y="540" width="260" height="45" rx="6" fill="#141210" stroke="#1e1c18" stroke-width="0.5"/>
+
+  <!-- Window on wall 3 -->
+  <rect x="1120" y="360" width="300" height="260" fill="#0a0908" stroke="#1a1816" stroke-width="1.5"/>
+  <line x1="1270" y1="360" x2="1270" y2="620" stroke="#1a1816" stroke-width="0.5"/>
+
+  <!-- Bookshelf silhouette wall 4 -->
+  <rect x="1620" y="350" width="120" height="330" fill="#141210" stroke="#1a1816" stroke-width="0.5"/>
+  <line x1="1620" y1="420" x2="1740" y2="420" stroke="#1a1816" stroke-width="0.5"/>
+  <line x1="1620" y1="490" x2="1740" y2="490" stroke="#1a1816" stroke-width="0.5"/>
+  <line x1="1620" y1="560" x2="1740" y2="560" stroke="#1a1816" stroke-width="0.5"/>
+  <line x1="1620" y1="630" x2="1740" y2="630" stroke="#1a1816" stroke-width="0.5"/>
+
+  <!-- Ceiling light fixture -->
+  <circle cx="1024" cy="140" r="40" fill="none" stroke="#C5A46C" stroke-opacity="0.15" stroke-width="1"/>
+  <circle cx="1024" cy="140" r="15" fill="#1e1c18"/>
+
+  <!-- Room label -->
+  <text x="1024" y="500" text-anchor="middle" font-family="Georgia, serif" font-size="48" fill="#C5A46C" opacity="0.6" letter-spacing="8">DNEVNI BORAVAK</text>
+  <text x="1024" y="540" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#C5A46C" opacity="0.3" letter-spacing="4">Dvosoban — Belveder Residence</text>
+  <text x="1024" y="570" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#C5A46C" opacity="0.2">360° Panorama Placeholder</text>
+</svg>
