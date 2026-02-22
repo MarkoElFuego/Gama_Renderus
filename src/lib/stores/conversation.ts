@@ -29,7 +29,7 @@ export function addMessage(role: 'user' | 'assistant' | 'system', content: strin
 }
 
 export function addWelcomeMessage(projectName: string) {
-  addMessage('assistant', `Dobrodosli u ${projectName}. Pitajte me o stanovima, ili recite "rotiraj" da pogledate zgradu.`);
+  addMessage('assistant', `Dobro dosli u ${projectName}! Gledate juznu fasadu zgrade. Recite mi sta vas zanima — ili samo kazite "pokazi mi nesto lepo" i ja cu vas provesti.`);
 }
 
 export function clearMessages() {
