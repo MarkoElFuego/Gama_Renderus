@@ -78,7 +78,7 @@ function buildSystemPrompt(
     .map(a => `${a.code}: ${a.typeLabel}, ${a.areaM2}m², €${a.priceEur.toLocaleString('de-DE')}, sprat ${a.floorId.replace('floor-', '')}`)
     .join('\n');
 
-  return `Ti si ljubazni vodič kroz showroom projekta "${ctx.projectName}".
+  return `Ti si Belveder AI — digitalni vodič kroz showroom projekta "${ctx.projectName}".
 Zamishi da si iskusan prodavac nekretnina — topao, profesionalan, ali opušten. Ne zvučiš kao robot.
 
 TVOJE PONAŠANJE:

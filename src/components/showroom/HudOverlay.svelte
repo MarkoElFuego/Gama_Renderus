@@ -26,9 +26,6 @@
   <div class="hud-info hud-info--tl">
     <span class="hud-project">{project.name}</span>
     <span class="hud-state">{VIEW_LABELS[$currentView] || ''}</span>
-    {#if $currentView === 'building' || $currentView === 'facade_highlight'}
-      <span class="hud-facade">FASADA {$currentFacade}</span>
-    {/if}
   </div>
 
   <!-- Top-right: apartment info when selected -->
@@ -134,15 +131,6 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     color: var(--text-dim);
-  }
-
-  .hud-facade {
-    font-family: var(--sans);
-    font-size: 9px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: rgba(197, 164, 108, 0.5);
-    margin-top: 2px;
   }
 
   .hud-apt-code {

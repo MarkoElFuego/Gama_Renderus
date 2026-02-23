@@ -3,18 +3,22 @@
 
   let displayedText = $state('');
   let isTyping = $state(false);
+  let prevMsgId = $state('');
 
   // Typing animation effect
   $effect(() => {
     const msg = $lastAssistantMessage;
     if (!msg) {
       displayedText = '';
+      prevMsgId = '';
       return;
     }
 
-    const fullText = msg.content;
-    if (fullText === displayedText) return;
+    // Only animate if it's a new message
+    if (msg.id === prevMsgId) return;
+    prevMsgId = msg.id;
 
+    const fullText = msg.content;
     isTyping = true;
     displayedText = '';
     let i = 0;
@@ -27,63 +31,71 @@
         clearInterval(interval);
         isTyping = false;
       }
-    }, 20);
+    }, 18);
 
     return () => clearInterval(interval);
   });
 </script>
 
-<div class="response-bar" class:has-content={displayedText.length > 0}>
+<div class="response-bar">
+  <span class="response-prefix">Belveder AI</span>
+  <span class="response-divider"></span>
   {#if displayedText}
-    <span class="response-prefix">AI:</span>
     <span class="response-text">{displayedText}</span>
     {#if isTyping}
       <span class="cursor">|</span>
     {/if}
+  {:else}
+    <span class="response-placeholder">Pitajte me nesto...</span>
   {/if}
 </div>
 
 <style>
   .response-bar {
-    min-height: 0;
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 var(--space-6);
-    background: rgba(12, 11, 10, 0.9);
-    border-top: 1px solid transparent;
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    display: flex;
-    align-items: center;
-    gap: var(--space-2);
-  }
-
-  .response-bar.has-content {
-    min-height: 40px;
-    max-height: 80px;
     padding: var(--space-3) var(--space-6);
-    border-top-color: rgba(197, 164, 108, 0.08);
+    background: rgba(12, 11, 10, 0.95);
+    border-top: 1px solid rgba(197, 164, 108, 0.1);
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+    min-height: 44px;
   }
 
   .response-prefix {
-    font-family: var(--sans);
-    font-size: 10px;
-    font-weight: 500;
+    font-family: var(--serif);
+    font-size: 12px;
+    font-weight: 400;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--gold);
     flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .response-divider {
+    width: 1px;
+    height: 14px;
+    background: rgba(197, 164, 108, 0.2);
+    flex-shrink: 0;
+    align-self: center;
   }
 
   .response-text {
     font-family: var(--sans);
     font-size: 13px;
     font-weight: 300;
-    color: var(--text-mid);
+    color: var(--text);
     letter-spacing: 0.3px;
-    line-height: 1.4;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    line-height: 1.5;
+  }
+
+  .response-placeholder {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--text-dim);
+    opacity: 0.4;
+    letter-spacing: 0.3px;
   }
 
   .cursor {
@@ -98,8 +110,13 @@
   }
 
   @media (max-width: 768px) {
-    .response-bar.has-content {
-      padding: var(--space-2) var(--space-4);
+    .response-bar {
+      padding: var(--space-3) var(--space-4);
+    }
+
+    .response-prefix {
+      font-size: 10px;
+      letter-spacing: 1.5px;
     }
 
     .response-text {
